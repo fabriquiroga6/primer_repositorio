@@ -1,52 +1,8 @@
 ---
-    const pageTitle = "Blog";
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Blog Page";
 ---
-
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-
-    <header class="hero">
-      <h1>{pageTitle}</h1>
-      <nav>
-        <a href="/">Home -</a>
-        <a href="/about/">About -</a>
-        <a href="/blog/">Blog</a>
-      </nav>
-      <p>This is where I will post about my journey learning Astro.</p>
-      <ul>
-        <li><a href="/posts/post-1/">Post 1</a></li>
-        <li><a href="/posts/post-2/">Post 2</a></li>
-        <li><a href="/posts/post-3/">Post 3</a></li>
-      </ul>
-    </header>
-
-    <section class="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Soy un desarrollador freelance apasionado por el diseño limpio, la eficiencia del código y el aprendizaje continuo.</p>
-    </section>
-
-    <section class="proyectos">
-      <h2>Proyectos</h2>
-      <ul>
-        <li><strong>Portafolio personal:</strong> Sitio web moderno y rápido.</li>
-        <li><strong>Landing page restaurante:</strong> Diseño atractivo con menú y contacto.</li>
-        <li><strong>Quiz de cultura general:</strong> App con preguntas dinámicas y puntaje.</li>
-      </ul>
-    </section>
-
-    <section class="contacto">
-      <h2>Contacto</h2>
-      <p>Podés escribirme a <a href="mailto:fabriquiroga6@gmail.com">fabriquiroga6@gmail.com</a></p>
-    </section>
-
-    <footer>
-      <p>© 2025 Fabri Quiroga. Todos los derechos reservados.</p>
-    </footer>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+</BaseLayout>
 
